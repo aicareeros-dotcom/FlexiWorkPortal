@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexiWork™ Portal | Official Data Management Systems</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Flexi<span>Work</span></div>
+        <div id="nav-status">
+            <span class="badge-verified"><i class="fa-solid fa-shield-halved"></i> Verified Secure Node</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <div id="auth-block">
+            <div id="register-card" class="auth-container">
+                <div class="auth-header">
+                    <h2>Contractor Registration</h2>
+                    <p>Register to start receiving certified commercial indexing projects.</p>
+                </div>
+                <div class="input-group">
+                    <label>Full Legal Name (As per Govt ID)</label>
+                    <input type="text" id="reg-name" placeholder="e.g. Rahul Sharma">
+                </div>
+                <div class="input-group">
+                    <label>Official Email Address</label>
+                    <input type="email" id="reg-email" placeholder="rahul@example.com">
+                </div>
+                <div class="input-group">
+                    <label>Create Secure Password</label>
+                    <input type="password" id="reg-pass" placeholder="••••••••">
+                </div>
+                <button class="btn-action" onclick="processRegister()">Next: Account Verification</button>
+                <p class="toggle-text">
+                    Already registered? <a href="#" onclick="toggleScreens(false)">Secure Login</a>
+                </p>
+            </div>
+
+            <div id="login-card" class="auth-container" style="display: none;">
+                <div class="auth-header">
+                    <h2>Portal Access Login</h2>
+                    <p>Enter your unique login keys to load your assigned ledger
+                      
